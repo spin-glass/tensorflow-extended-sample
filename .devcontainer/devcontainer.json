@@ -1,0 +1,23 @@
+{
+	"name": "Jupyter Tensorflow Notebooks",
+
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "jupyter",
+	"workspaceFolder": "/home/work",
+
+	"forwardPorts": [8888],
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/opt/conda/bin/python"
+			},
+
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter"
+			]
+		}
+	}
+}
